@@ -10,12 +10,11 @@ months = ['January',
           'October',
           'November',
           'December']
-          
-def valid_month(month):
+month_abbvs = dict((m[:3].lower(),m) for m in months)
 
+def valid_month(month):
     if month:
-        cap_month = month.capitalize()
-        if month in months
-    return cap_month
-    
-print valid_month("january")
+        short_month = month[:3].lower()
+        return month_abbvs.get(short_month)
+        
+print valid_month('Ozock')
