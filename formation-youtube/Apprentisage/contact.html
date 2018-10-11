@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <form action="contact.html">
+        <fieldset>
+            <legend>Nous contacter</legend>
+            <div>
+                <label for="emailinput">Votre Email</label>
+                <input type="email" name="email" id="emailinput" placeholder="contact@test.com">
+            </div>
+            <div>
+                    <label for="Nameinput">Votre Nom</label>
+                    <input type="text" name="name" id="Nameinput" placeholder="Cyril Carail">
+            </div>
+            <div>
+                    <label for="dateinput"> Votre anniversaire
+                        <input type="date" name="date" id="dateinput">
+                    </label>
+            </div>
+            <div>
+                <label for"sexe">Sexe</label>
+                <select id="sexe" name="sexe">
+                    <option value="M">Masculin</option>
+                    <option value="F">Féminin</option>
+                
+                </select>
+            </div>
+            <div>
+                    <label><input type="checkbox" name="cgu">J'accepte les conditions d'utilisations</label>
+            </div>
+          
+            <div>
+                <input type="submit" value="Envoyer vos informations">
+                <input type="reset" value="Annuler">
+            </div>
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>
