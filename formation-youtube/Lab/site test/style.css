@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box
 }
@@ -8,7 +9,7 @@ body, html{
     color: rgba(0, 0, 0, .87);
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 400;
 
 }
 
@@ -31,6 +32,7 @@ body, html{
     text-decoration: none;
     font-weight: 500;
     margin: 0 53px;
+    transition: color 0.5s;
 }
 .topbar nav a:hover, .topbar nav a.active{
     color: #000;
@@ -41,6 +43,7 @@ body, html{
 .social a {
     padding: 0 12px;
     opacity: 0.5;
+    transition: opacity .3s;
 }
 .social a:hover{
     opacity: 1;
@@ -136,7 +139,14 @@ body, html{
     font-size: 2.25rem;
     line-height: 1.1;
     margin: 0 15px 0 0;
-}
+}  
+.article-title::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 15%;
+    background-color:rgba(0, 0, 0, 0.6);
+}  
 .footer{
     clear: both;
     z-index: 4;
